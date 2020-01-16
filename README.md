@@ -5,6 +5,8 @@ This is an experiment to run at the same time:
 * [FoundationDB/fdb-kubernetes-operator](https://github.com/FoundationDB/fdb-kubernetes-operator)
 * [pingcap/go-ycsb](https://github.com/pingcap/go-ycsb)
 * [pingcap/chaos-mesh](https://github.com/pingcap/chaos-mesh)
+* [pingcap/chaos-mesh](https://github.com/pingcap/chaos-mesh)
+* [PierreZ/fdb-prometheus-exporter](https://github.com/PierreZ/fdb-prometheus-exporter/)
 
 ## Requirements
 
