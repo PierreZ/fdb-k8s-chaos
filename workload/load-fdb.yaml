@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: fdb-bench
+spec:
+  containers:
+  - name: fdb-workload1
+    image: pierrezemb/go-ycsb:fdb-6.2.11
+    command: [ "/go-ycsb", "load", "foundationdb", "-P", "workloads/workloadf", "-p", "fdb.cluster=/mnt/config-volume/cluster-file", "-p", "fdb.apiversion=620", "-p", "recordcount=10000000", "-p", "operationcount=100000000", "-p", "threadcount=100"]
+    volumeMounts:
+    - name: config-volume
+      mountPath: /mnt/config-volume
+  
+  volumes:
+  - name: config-volume
+    configMap:
+      name: sample-cluster-config
+  restartPolicy: Never

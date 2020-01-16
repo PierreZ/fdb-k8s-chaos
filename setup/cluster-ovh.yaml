@@ -1,0 +1,10 @@
+apiVersion: apps.foundationdb.org/v1beta1
+kind: FoundationDBCluster
+metadata:
+  name: sample-cluster
+spec:
+  version: 6.2.11
+  databaseConfiguration:
+    storage: 6
+    log: 5
+    stateless: 4
