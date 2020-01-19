@@ -5,6 +5,5 @@ metadata:
 spec:
   version: 6.2.11
   databaseConfiguration:
-    storage: 6
-    log: 5
-    stateless: 4
+    stateless: 7 # default is 6
+  
